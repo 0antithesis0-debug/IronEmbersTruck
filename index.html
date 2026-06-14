@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Iron & Embers Food Truck — Homemade breads, breakfast, and lunch rolling through Southeast Kansas. Find us, order ahead, and book catering." />
+  <meta property="og:title" content="Iron & Embers | Southeast Kansas" />
+  <meta property="og:description" content="The Heat of the Mine. On Wheels." />
+  <meta property="og:image" content="images/hero-forge.png" />
+  <meta name="theme-color" content="#0f0f0f" />
+  <title>Iron & Embers | Southeast Kansas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announce-bar">
+    🔥 Now rolling through Pittsburg, KS — Follow us on Instagram for real-time location drops
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <img src="images/logo-round.png" alt="Iron & Embers" class="nav__logo-icon" />
+        <span class="nav__logo-text">Iron <span class="amp">&</span> Embers</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#location">Find Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order Ahead</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#order" class="nav__order-btn">Order Ahead</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO — forge/pickaxe/lantern wide shot -->
+  <header class="hero" id="top">
+    <div class="hero__bg">
+      <img src="images/hero-forge.png" alt="Iron & Embers forge" class="hero__bg-img" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="ember-particles" id="particles"></div>
+    <div class="hero__content">
+      <div class="hero__logo-wrap">
+        <img src="images/logo-round.png" alt="Iron & Embers" class="hero__logo" />
+      </div>
+      <p class="hero__subtitle">Southeast Kansas · Food Truck</p>
+      <h1 class="hero__title">Iron <span class="amp">&</span><br/>Embers</h1>
+      <p class="hero__tagline">The Heat of the Mine. On Wheels.</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--ember">View Menu</a>
+        <a href="#location" class="btn btn--outline">Find Us Today</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-item">Homemade Cinnamon Rolls</div>
+      <div class="ticker-item">Fresh-Baked Breads</div>
+      <div class="ticker-item">Breakfast All Morning</div>
+      <div class="ticker-item">Lunch Done Right</div>
+      <div class="ticker-item">Pies · Cakes · Cookies</div>
+      <div class="ticker-item">Pittsburg, KS</div>
+      <div class="ticker-item">Catering Available</div>
+      <div class="ticker-item">Coal Country Comfort</div>
+      <div class="ticker-item">Homemade Cinnamon Rolls</div>
+      <div class="ticker-item">Fresh-Baked Breads</div>
+      <div class="ticker-item">Breakfast All Morning</div>
+      <div class="ticker-item">Lunch Done Right</div>
+      <div class="ticker-item">Pies · Cakes · Cookies</div>
+      <div class="ticker-item">Pittsburg, KS</div>
+      <div class="ticker-item">Catering Available</div>
+      <div class="ticker-item">Coal Country Comfort</div>
+    </div>
+  </div>
+
+  <!-- ATMOSPHERE STRIP — embers close-up between ticker and location -->
+  <div class="atmo-strip">
+    <img src="images/embers-close.png" alt="" class="atmo-strip__img" aria-hidden="true" />
+    <div class="atmo-strip__overlay"></div>
+    <p class="atmo-strip__quote">"Nothing here comes from a bag or a box."</p>
+  </div>
+
+  <!-- FIND US -->
+  <section class="section location-section" id="location">
+    <div class="section__inner">
+      <div class="section__header">
+        <p class="eyebrow eyebrow--ember">Find the Truck</p>
+        <h2 class="section__headline">Where We're<br/><em>Firing Today</em></h2>
+        <p class="section__sub">We move, you follow. Check the schedule or track us live on StreetFoodFinder.</p>
+      </div>
+      <div class="location-grid">
+        <div>
+          <div class="schedule-card">
+            <div class="schedule-card__header">
+              <div class="live-dot"></div>
+              <h3>This Week's Schedule</h3>
+            </div>
+            <div class="schedule-day schedule-day--today">
+              <span class="schedule-day__dow">Wednesday</span>
+              <span class="schedule-day__location">4th & Broadway, Pittsburg</span>
+              <span class="schedule-day__time">7am – 2pm</span>
+            </div>
+            <div class="schedule-day">
+              <span class="schedule-day__dow">Thursday</span>
+              <span class="schedule-day__location">Pittsburg State University</span>
+              <span class="schedule-day__time">7am – 1pm</span>
+            </div>
+            <div class="schedule-day">
+              <span class="schedule-day__dow">Friday</span>
+              <span class="schedule-day__location">Farlington Farmers Market</span>
+              <span class="schedule-day__time">8am – 1pm</span>
+            </div>
+            <div class="schedule-day">
+              <span class="schedule-day__dow">Saturday</span>
+              <span class="schedule-day__location">Downtown Pittsburg Square</span>
+              <span class="schedule-day__time">7am – 3pm</span>
+            </div>
+            <div class="schedule-day schedule-day--closed">
+              <span class="schedule-day__dow">Sunday</span>
+              <span class="schedule-day__location">Closed</span>
+              <span class="schedule-day__time">—</span>
+            </div>
+          </div>
+          <div class="tracker-links">
+            <a href="https://streetfoodfinder.com/" target="_blank" rel="noopener" class="tracker-link">📍 StreetFoodFinder</a>
+            <a href="https://gotruckster.com/" target="_blank" rel="noopener" class="tracker-link">🚚 Truckster</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="tracker-link">📸 Instagram</a>
+          </div>
+        </div>
+        <div>
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51236.16!2d-94.7058!3d37.4106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b6c85cc4d8f0c3%3A0x4f7e9a2c90e5f0a0!2sPittsburg%2C%20KS!5e0!3m2!1sen!2sus!4v1700000000000"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Iron & Embers current location map"
+            ></iframe>
+            <div class="map-overlay-badge">
+              <div class="live-dot"></div>
+              Live Location · Downtown Pittsburg
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUCK SHOWCASE — wide truck photo -->
+  <section class="truck-showcase">
+    <img src="images/truck-wide.png" alt="Iron & Embers food truck" class="truck-showcase__img" />
+    <div class="truck-showcase__overlay"></div>
+    <div class="truck-showcase__content">
+      <p class="eyebrow eyebrow--ember">The Truck</p>
+      <h2>Coal Country<br/><em>On Wheels.</em></h2>
+    </div>
+  </section>
+
+  <div class="ore-divider" aria-hidden="true">
+    <div class="ore-divider__line"></div>
+    <svg class="ore-divider__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 4L28 12V20L16 28L4 20V12L16 4Z" fill="#C0392B" opacity="0.8"/>
+      <path d="M16 8L24 13.5V19L16 24.5L8 19V13.5L16 8Z" fill="#0f0f0f"/>
+      <path d="M16 11L21 14.5V18L16 21.5L11 18V14.5L16 11Z" fill="#C0392B" opacity="0.5"/>
+    </svg>
+    <div class="ore-divider__line"></div>
+  </div>
+
+  <!-- MENU — brisket+bread image as section header -->
+  <section class="section menu-section" id="menu">
+    <div class="menu-hero-img-wrap">
+      <img src="images/brisket-bread.png" alt="Iron & Embers food" class="menu-hero-img" />
+      <div class="menu-hero-img__overlay"></div>
+      <div class="menu-hero-img__text">
+        <p class="eyebrow">The Menu</p>
+        <h2 class="section__headline">Made from<br/><em>Scratch. Every Day.</em></h2>
+      </div>
+    </div>
+    <div class="section__inner">
+      <p class="section__sub" style="text-align:center; margin-bottom: 36px;">Homemade breads, fresh-baked goods, and hearty breakfast & lunch — named for the mine, made with heart.</p>
+
+      <!-- Bakery callout with cinnamon roll image -->
+      <div class="bakery-feature">
+        <div class="bakery-feature__img-wrap">
+          <img src="images/cinnamon-roll.png" alt="Freshly baked cinnamon roll and coffee" class="bakery-feature__img" />
+        </div>
+        <div class="bakery-feature__text">
+          <p class="eyebrow eyebrow--gold">Fresh Every Morning</p>
+          <h3>Baked from<br/><em>Scratch Daily</em></h3>
+          <p>Cinnamon rolls pulled from the oven before 6am. Sourdough that cracks when you break it. Pies that won't last till noon. Get here early.</p>
+          <div class="bakery-highlight">
+            <div class="bakery-card">
+              <span class="bakery-card__icon">🍞</span>
+              <div class="bakery-card__label">Homemade Breads</div>
+            </div>
+            <div class="bakery-card">
+              <span class="bakery-card__icon">🥐</span>
+              <div class="bakery-card__label">Cinnamon Rolls</div>
+            </div>
+            <div class="bakery-card">
+              <span class="bakery-card__icon">🥧</span>
+              <div class="bakery-card__label">Pies · Cakes · Cookies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lunch feature image -->
+      <div class="lunch-feature">
+        <img src="images/sandwich-tray.png" alt="Sandwich and soup on cast iron tray" class="lunch-feature__img" />
+        <div class="lunch-feature__overlay"></div>
+        <div class="lunch-feature__text">
+          <p class="eyebrow eyebrow--ember">Lunch</p>
+          <h3>Hearty. Homemade.<br/><em>Worth the Drive.</em></h3>
+        </div>
+      </div>
+
+      <!-- Menu tabs -->
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab active" role="tab" data-tab="breakfast">Breakfast</button>
+        <button class="menu-tab" role="tab" data-tab="lunch">Lunch</button>
+        <button class="menu-tab" role="tab" data-tab="bakery">Bakery</button>
+        <button class="menu-tab" role="tab" data-tab="drinks">Drinks</button>
+      </div>
+
+      <!-- BREAKFAST -->
+      <div class="menu-panel active" id="tab-breakfast">
+        <div class="menu-items">
+          <div class="menu-item menu-item--featured">
+            <div>
+              <div class="menu-item__name">The Miner's Plate</div>
+              <div class="menu-item__desc">Two eggs your way, two strips of bacon or sausage patty, home fries, and a thick slice of homemade toast</div>
+              <span class="menu-item__tag">⭐ Signature</span>
+            </div>
+            <div class="menu-item__price">$10.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">The Canary Scramble</div>
+              <div class="menu-item__desc">Three-egg scramble with pepper jack, jalapeño, sausage crumble, and ember salsa on homemade sourdough</div>
+            </div>
+            <div class="menu-item__price">$9.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Foreman's Biscuit Sandwich</div>
+              <div class="menu-item__desc">Buttermilk biscuit baked fresh daily, fried egg, American cheese, choice of bacon or sausage</div>
+              <span class="menu-item__tag">🔥 Most Popular</span>
+            </div>
+            <div class="menu-item__price">$7.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Ore Cart Gravy Bowl</div>
+              <div class="menu-item__desc">Home fries smothered in house-made sausage gravy, topped with a fried egg and chives</div>
+            </div>
+            <div class="menu-item__price">$8.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Cinnamon Roll French Toast</div>
+              <div class="menu-item__desc">Thick-sliced homemade cinnamon roll bread, egg-dipped and griddle-crisped, with powdered sugar and maple drizzle</div>
+              <span class="menu-item__tag--gold menu-item__tag">✨ Fan Favorite</span>
+            </div>
+            <div class="menu-item__price">$8.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Two Eggs & Toast</div>
+              <div class="menu-item__desc">Two eggs any style with buttered homemade white or wheat toast</div>
+            </div>
+            <div class="menu-item__price">$5.99</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LUNCH -->
+      <div class="menu-panel" id="tab-lunch">
+        <div class="menu-items">
+          <div class="menu-item menu-item--featured">
+            <div>
+              <div class="menu-item__name">The Claim Jumper</div>
+              <div class="menu-item__desc">Smash burger on a homemade brioche-style bun, pepper jack, jalapeño bacon, ember-roasted onions, chipotle aioli</div>
+              <span class="menu-item__tag">⭐ Signature</span>
+            </div>
+            <div class="menu-item__price">$12.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">The Shaft Grilled Cheese</div>
+              <div class="menu-item__desc">Three-cheese blend on thick-sliced homemade white bread, butter-crisped on the griddle. Add tomato or bacon +$1</div>
+            </div>
+            <div class="menu-item__price">$7.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Coal Country BLT</div>
+              <div class="menu-item__desc">Thick-cut bacon, vine tomato, crisp lettuce, house mayo on toasted homemade sourdough</div>
+              <span class="menu-item__tag">🔥 Most Popular</span>
+            </div>
+            <div class="menu-item__price">$9.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">The Canary Chicken Sandwich</div>
+              <div class="menu-item__desc">Crispy fried chicken thigh, honey hot glaze, pickled slaw, dill pickle on a toasted homemade bun</div>
+            </div>
+            <div class="menu-item__price">$11.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Loaded Mine Fries</div>
+              <div class="menu-item__desc">Thick-cut fries, coal queso, jalapeño, sour cream, green onions</div>
+            </div>
+            <div class="menu-item__price">$8.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Soup of the Day</div>
+              <div class="menu-item__desc">Ask at the window — served with a slice of homemade bread</div>
+            </div>
+            <div class="menu-item__price">$6.99</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BAKERY -->
+      <div class="menu-panel" id="tab-bakery">
+        <div class="menu-items">
+          <div class="menu-item menu-item--featured">
+            <div>
+              <div class="menu-item__name">Giant Cinnamon Roll</div>
+              <div class="menu-item__desc">Oversized pull-apart roll, baked fresh each morning, smothered in cream cheese icing</div>
+              <span class="menu-item__tag--gold menu-item__tag">✨ Baked Fresh Daily</span>
+            </div>
+            <div class="menu-item__price">$4.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Loaf of the Day</div>
+              <div class="menu-item__desc">Rotating daily — sourdough, white, wheat, or jalapeño cheddar. Full loaf or half available</div>
+              <span class="menu-item__tag--gold menu-item__tag">✨ Ask at Window</span>
+            </div>
+            <div class="menu-item__price">From $5.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Slice of Pie</div>
+              <div class="menu-item__desc">Rotating seasonal flavors — apple, cherry, pecan, chess. Ask for today's selection</div>
+            </div>
+            <div class="menu-item__price">$4.49</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Whole Pie (Pre-Order)</div>
+              <div class="menu-item__desc">Order a full pie 48 hrs in advance. Perfect for events, holidays, or gifting</div>
+            </div>
+            <div class="menu-item__price">$22.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Slice of Cake</div>
+              <div class="menu-item__desc">Rotating flavors — ask at the window. Layered, frosted, made from scratch</div>
+            </div>
+            <div class="menu-item__price">$4.49</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Cookies (3-pack)</div>
+              <div class="menu-item__desc">Chocolate chip, snickerdoodle, or oatmeal raisin — baked in small batches</div>
+              <span class="menu-item__tag">🍪 Grab & Go</span>
+            </div>
+            <div class="menu-item__price">$3.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Custom Orders</div>
+              <div class="menu-item__desc">Birthday cakes, event pies, bread for catering — use the Catering form below to inquire</div>
+            </div>
+            <div class="menu-item__price">Inquire</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="menu-panel" id="tab-drinks">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Canteen Coffee</div>
+              <div class="menu-item__desc">Hot drip coffee — regular or dark roast. Free refills at the window while you wait</div>
+            </div>
+            <div class="menu-item__price">$2.49</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Canteen Sweet Tea</div>
+              <div class="menu-item__desc">House-brewed sweet tea, fresh lemon</div>
+            </div>
+            <div class="menu-item__price">$2.99</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Fountain Drinks</div>
+              <div class="menu-item__desc">Pepsi products</div>
+            </div>
+            <div class="menu-item__price">$2.49</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item__name">Ember Lemonade</div>
+              <div class="menu-item__desc">Fresh-squeezed with jalapeño simple syrup and a chili salt rim</div>
+              <span class="menu-item__tag">🌶️ Spicy</span>
+            </div>
+            <div class="menu-item__price">$3.99</div>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item__name">Bottled Water</div></div>
+            <div class="menu-item__price">$1.49</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-download-bar">
+        <p>Full menu with allergen info available as PDF</p>
+        <a href="#" class="btn btn--outline" style="padding: 10px 20px; font-size: 11px;">↓ Download Menu PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ore-divider" aria-hidden="true">
+    <div class="ore-divider__line"></div>
+    <svg class="ore-divider__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 4L28 12V20L16 28L4 20V12L16 4Z" fill="#C0392B" opacity="0.8"/>
+      <path d="M16 8L24 13.5V19L16 24.5L8 19V13.5L16 8Z" fill="#0f0f0f"/>
+    </svg>
+    <div class="ore-divider__line"></div>
+  </div>
+
+  <!-- ORDER AHEAD -->
+  <section class="section order-section" id="order">
+    <div class="section__inner">
+      <div class="section__header">
+        <p class="eyebrow eyebrow--gold">Order Ahead</p>
+        <h2 class="section__headline">Skip the<br/><em>Line.</em></h2>
+      </div>
+      <div class="order-coming-soon">
+        <span class="order-icon">🚧</span>
+        <h3>Online Ordering Coming Soon</h3>
+        <p>We're setting up online ordering so you can place your breakfast or lunch order before you roll up to the window — and grab your baked goods before they sell out.</p>
+        <p style="font-size:13px; color: var(--iron); margin-bottom: 24px;">Be first to know when it launches:</p>
+        <div class="order-notify-form">
+          <input type="email" id="notifyEmail" placeholder="your@email.com" />
+          <button class="btn btn--ember" onclick="handleNotifySignup()">Notify Me</button>
+        </div>
+        <p style="margin-top: 16px; font-size: 12px; color: var(--iron);" id="notifyMsg"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATERING — anvil image as background -->
+  <section class="section catering-section" id="catering">
+    <div class="catering-bg-wrap">
+      <img src="images/anvil.png" alt="" class="catering-bg-img" aria-hidden="true" />
+      <div class="catering-bg-overlay"></div>
+    </div>
+    <div class="section__inner" style="position:relative; z-index:2;">
+      <div class="section__header">
+        <p class="eyebrow eyebrow--ember">Private Catering</p>
+        <h2 class="section__headline">Bring the Truck<br/><em>to Your Event.</em></h2>
+        <p class="section__sub">Fresh-baked goods, hot breakfast, or a full lunch spread — we roll out for any occasion in the Four-State region.</p>
+      </div>
+      <div class="catering-grid">
+        <div class="catering-text">
+          <div class="catering-types">
+            <div class="catering-type">
+              <div class="catering-type__icon">🏢</div>
+              <div class="catering-type__text">
+                <h4>Corporate Breakfasts & Lunches</h4>
+                <p>Minimum 25 guests. We set up, serve, and clean up. Fresh rolls, biscuit bars, sandwich spreads — tailored to your team.</p>
+              </div>
+            </div>
+            <div class="catering-type">
+              <div class="catering-type__icon">🎉</div>
+              <div class="catering-type__text">
+                <h4>Private Events</h4>
+                <p>Graduation parties, reunions, baby showers — homemade pies and cakes made to order, or a full breakfast/lunch spread on-site.</p>
+              </div>
+            </div>
+            <div class="catering-type">
+              <div class="catering-type__icon">🥧</div>
+              <div class="catering-type__text">
+                <h4>Custom Bakery Orders</h4>
+                <p>Birthday cakes, event pies, bread for your shop or restaurant — pre-orders welcome with 48+ hrs notice.</p>
+              </div>
+            </div>
+            <div class="catering-type">
+              <div class="catering-type__icon">🎪</div>
+              <div class="catering-type__text">
+                <h4>Festivals & Markets</h4>
+                <p>Booking regional events year-round. Inquire for availability and pricing.</p>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 13px; color: var(--iron-light);">We travel within 75 miles of Pittsburg, KS. Events start at $400 depending on guest count and menu selection.</p>
+        </div>
+        <div class="catering-form-wrap">
+          <h3>Request a Booking</h3>
+          <div id="cateringForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Name</label>
+                <input type="text" id="cName" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="cPhone">Phone</label>
+                <input type="tel" id="cPhone" placeholder="(620) 000-0000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Email</label>
+              <input type="email" id="cEmail" placeholder="your@email.com" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cDate">Event Date</label>
+                <input type="date" id="cDate" />
+              </div>
+              <div class="form-group">
+                <label for="cGuests">Guests</label>
+                <select id="cGuests">
+                  <option value="">Approx. count</option>
+                  <option>Under 25</option>
+                  <option>25–50</option>
+                  <option>50–100</option>
+                  <option>100+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cType">What are you looking for?</label>
+              <select id="cType">
+                <option value="">Select type</option>
+                <option>Corporate Breakfast / Lunch</option>
+                <option>Private Party</option>
+                <option>Custom Bakery Order</option>
+                <option>Festival / Market</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cNotes">Notes / Location</label>
+              <textarea id="cNotes" placeholder="Tell us about your event, what you're craving, and where it's located..."></textarea>
+            </div>
+            <button class="btn btn--ember btn--full" onclick="handleCateringSubmit()">Send Request</button>
+          </div>
+          <div class="form-success" id="cateringSuccess">
+            <span class="success-icon">◆</span>
+            <h4>Request received.</h4>
+            <p>We'll reach out within 24–48 hours to confirm availability and talk details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT — mine tunnel + bread kneading -->
+  <section class="section about-section" id="about">
+    <div class="about-tunnel-bg">
+      <img src="images/mine-tunnel.png" alt="" class="about-tunnel-img" aria-hidden="true" />
+      <div class="about-tunnel-overlay"></div>
+    </div>
+    <div class="section__inner" style="position:relative; z-index:2;">
+      <div class="about-grid">
+        <div class="about-logo-wrap">
+          <img src="images/logo-round.png" alt="Iron & Embers — The Heat of the Mine. The Heart of the Town." class="about-logo" />
+          <div class="about-craft-img-wrap">
+            <img src="images/kneading-bread.png" alt="Hands kneading homemade bread dough" class="about-craft-img" />
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">Our Story</p>
+          <h2>Forged from<br/><em>Coal Country.</em></h2>
+          <p>Southeast Kansas didn't just mine coal — it built communities around it. The bakers who fed the miners. The cooks who kept the crews going. Iron & Embers carries that tradition forward.</p>
+          <p>Before the restaurant opens its doors, the truck rolls first. Homemade breads baked fresh every morning, breakfast made to order, and lunch worth driving across Crawford County for.</p>
+          <p>Every dish name comes from the mine. Every loaf is made from scratch. Nothing here comes from a bag or a box.</p>
+          <div class="about-stats">
+            <div>
+              <span class="about-stat__num">100%</span>
+              <span class="about-stat__label">From Scratch</span>
+            </div>
+            <div>
+              <span class="about-stat__num">75mi</span>
+              <span class="about-stat__label">Catering Radius</span>
+            </div>
+            <div>
+              <span class="about-stat__num">SE KS</span>
+              <span class="about-stat__label">Coal Heritage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL — truck at dusk -->
+  <section class="social-section">
+    <div class="social-truck-wrap">
+      <img src="images/truck-dusk.png" alt="Iron & Embers truck at dusk" class="social-truck-img" />
+      <div class="social-truck-overlay"></div>
+    </div>
+    <div class="social-content">
+      <h2>Follow the <em>Truck</em></h2>
+      <p>Real-time location drops, daily specials, and fresh-out-of-the-oven moments.</p>
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">📸 Instagram</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link">👍 Facebook</a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-link">🎵 TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="images/logo-round.png" alt="Iron & Embers" class="footer__brand-logo" />
+        <div class="footer__brand-text">
+          <div class="footer__brand-name">Iron <span class="amp">&</span> Embers</div>
+          <div class="footer__brand-tagline">"The Heat of the Mine. On Wheels." · Southeast Kansas</div>
+        </div>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h5>Navigate</h5>
+          <a href="#location">Find Us Today</a>
+          <a href="#menu">Menu</a>
+          <a href="#order">Order Ahead</a>
+          <a href="#catering">Catering & Events</a>
+          <a href="#about">Our Story</a>
+        </div>
+        <div class="footer__col">
+          <h5>Track the Truck</h5>
+          <a href="https://streetfoodfinder.com/" target="_blank" rel="noopener">StreetFoodFinder</a>
+          <a href="https://gotruckster.com/" target="_blank" rel="noopener">Truckster</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a>
+        </div>
+        <div class="footer__col">
+          <h5>Hours</h5>
+          <span>Wed – Fri · 7am – 2pm</span>
+          <span>Saturday · 7am – 3pm</span>
+          <span>Sun – Tue · Closed</span>
+          <span style="margin-top: 10px; color: rgba(245,240,232,0.3); font-size: 12px;">Schedule varies — follow us for live updates</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      © Iron & Embers, LLC · Pittsburg, KS · Built for Crawford County & the Four-State Region
+    </div>
+  </footer>
+
+  <script src="js/order-system-stub.js" defer></script>
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    document.querySelectorAll('.menu-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.menu-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        const panel = document.getElementById('tab-' + tab.dataset.tab);
+        if (panel) panel.classList.add('active');
+      });
+    });
+
+    const container = document.getElementById('particles');
+    function makeParticle() {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      const size = Math.random() * 4 + 2;
+      p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;bottom:${Math.random()*20}%;animation-duration:${Math.random()*5+4}s;animation-delay:${Math.random()*6}s;opacity:0;`;
+      container.appendChild(p);
+      setTimeout(() => p.remove(), 11000);
+    }
+    setInterval(makeParticle, 600);
+
+    function handleNotifySignup() {
+      const email = document.getElementById('notifyEmail').value.trim();
+      const msg = document.getElementById('notifyMsg');
+      if (!email || !email.includes('@')) {
+        msg.style.color = '#E74C3C';
+        msg.textContent = 'Please enter a valid email address.';
+        return;
+      }
+      msg.style.color = '#D4A017';
+      msg.textContent = "✓ You're on the list! We'll let you know when ordering goes live.";
+      document.getElementById('notifyEmail').value = '';
+    }
+
+    function handleCateringSubmit() {
+      const name = document.getElementById('cName').value.trim();
+      const email = document.getElementById('cEmail').value.trim();
+      if (!name || !email) { alert('Please fill in your name and email.'); return; }
+      document.getElementById('cateringForm').style.display = 'none';
+      document.getElementById('cateringSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
