@@ -25,14 +25,15 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#top" class="nav__logo">
+        <img src="images/logo-round.png" alt="Iron & Embers" class="nav__logo-icon" />
         <span class="nav__logo-text">Iron <span class="amp">&</span> Embers</span>
       </a>
       <button class="nav__toggle" id="navToggle" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
-        <li><a href="#location">Find Us</a></li>
         <li><a href="#menu">Menu</a></li>
+        <li><a href="#location">Find Us</a></li>
         <li><a href="#order">Order Ahead</a></li>
         <li><a href="#catering">Catering</a></li>
         <li><a href="#order" class="nav__order-btn">Order Ahead</a></li>
@@ -57,6 +58,7 @@
       <div class="hero__actions">
         <a href="#menu" class="btn btn--ember">View Menu</a>
         <a href="#location" class="btn btn--outline">Find Us Today</a>
+
       </div>
     </div>
   </header>
@@ -83,96 +85,6 @@
     </div>
   </div>
 
-  <!-- ATMOSPHERE STRIP — embers close-up between ticker and location -->
-  <div class="atmo-strip">
-    <img src="images/embers-close.png" alt="" class="atmo-strip__img" aria-hidden="true" />
-    <div class="atmo-strip__overlay"></div>
-    <p class="atmo-strip__quote">"Nothing here comes from a bag or a box."</p>
-  </div>
-
-  <!-- FIND US -->
-  <section class="section location-section" id="location">
-    <div class="section__inner">
-      <div class="section__header">
-        <p class="eyebrow eyebrow--ember">Find the Truck</p>
-        <h2 class="section__headline">Where We're<br/><em>Firing Today</em></h2>
-        <p class="section__sub">We move, you follow. Check the schedule or track us live on StreetFoodFinder.</p>
-      </div>
-      <div class="location-grid">
-        <div>
-          <div class="schedule-card">
-            <div class="schedule-card__header">
-              <div class="live-dot"></div>
-              <h3>This Week's Schedule</h3>
-            </div>
-            <div class="schedule-day schedule-day--today">
-              <span class="schedule-day__dow">Wednesday</span>
-              <span class="schedule-day__location">4th & Broadway, Pittsburg</span>
-              <span class="schedule-day__time">7am – 2pm</span>
-            </div>
-            <div class="schedule-day">
-              <span class="schedule-day__dow">Thursday</span>
-              <span class="schedule-day__location">Pittsburg State University</span>
-              <span class="schedule-day__time">7am – 1pm</span>
-            </div>
-            <div class="schedule-day">
-              <span class="schedule-day__dow">Friday</span>
-              <span class="schedule-day__location">Farlington Farmers Market</span>
-              <span class="schedule-day__time">8am – 1pm</span>
-            </div>
-            <div class="schedule-day">
-              <span class="schedule-day__dow">Saturday</span>
-              <span class="schedule-day__location">Downtown Pittsburg Square</span>
-              <span class="schedule-day__time">7am – 3pm</span>
-            </div>
-            <div class="schedule-day schedule-day--closed">
-              <span class="schedule-day__dow">Sunday</span>
-              <span class="schedule-day__location">Closed</span>
-              <span class="schedule-day__time">—</span>
-            </div>
-          </div>
-          <div class="tracker-links">
-            <a href="https://streetfoodfinder.com/" target="_blank" rel="noopener" class="tracker-link">📍 StreetFoodFinder</a>
-            <a href="https://gotruckster.com/" target="_blank" rel="noopener" class="tracker-link">🚚 Truckster</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="tracker-link">📸 Instagram</a>
-          </div>
-        </div>
-        <div>
-          <div class="map-wrap">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51236.16!2d-94.7058!3d37.4106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b6c85cc4d8f0c3%3A0x4f7e9a2c90e5f0a0!2sPittsburg%2C%20KS!5e0!3m2!1sen!2sus!4v1700000000000"
-              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="Iron & Embers current location map"
-            ></iframe>
-            <div class="map-overlay-badge">
-              <div class="live-dot"></div>
-              Live Location · Downtown Pittsburg
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUCK SHOWCASE — wide truck photo -->
-  <section class="truck-showcase">
-    <img src="images/truck-wide.png" alt="Iron & Embers food truck" class="truck-showcase__img" />
-    <div class="truck-showcase__overlay"></div>
-    <div class="truck-showcase__content">
-      <p class="eyebrow eyebrow--ember">The Truck</p>
-      <h2>Coal Country<br/><em>On Wheels.</em></h2>
-    </div>
-  </section>
-
-  <div class="ore-divider" aria-hidden="true">
-    <div class="ore-divider__line"></div>
-    <svg class="ore-divider__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 4L28 12V20L16 28L4 20V12L16 4Z" fill="#C0392B" opacity="0.8"/>
-      <path d="M16 8L24 13.5V19L16 24.5L8 19V13.5L16 8Z" fill="#0f0f0f"/>
-      <path d="M16 11L21 14.5V18L16 21.5L11 18V14.5L16 11Z" fill="#C0392B" opacity="0.5"/>
-    </svg>
-    <div class="ore-divider__line"></div>
-  </div>
 
   <!-- MENU — brisket+bread image as section header -->
   <section class="section menu-section" id="menu">
@@ -445,6 +357,99 @@
     <div class="ore-divider__line"></div>
   </div>
 
+
+  <!-- FIND US -->
+  <section class="section location-section" id="location">
+    <div class="section__inner">
+      <div class="section__header">
+        <p class="eyebrow eyebrow--ember">Find the Truck</p>
+        <h2 class="section__headline">Where We're<br/><em>Firing Today</em></h2>
+        <p class="section__sub">We move, you follow. Check the schedule or track us live on StreetFoodFinder.</p>
+      </div>
+      <div class="location-grid">
+        <div>
+          <div class="schedule-card">
+            <div class="schedule-card__header">
+              <div class="live-dot"></div>
+              <h3>This Week's Schedule</h3>
+            </div>
+            <div class="schedule-day schedule-day--today">
+              <span class="schedule-day__dow">Wednesday</span>
+              <span class="schedule-day__location">4th & Broadway, Pittsburg</span>
+              <span class="schedule-day__time">7am – 2pm</span>
+            </div>
+            <div class="schedule-day">
+              <span class="schedule-day__dow">Thursday</span>
+              <span class="schedule-day__location">Pittsburg State University</span>
+              <span class="schedule-day__time">7am – 1pm</span>
+            </div>
+            <div class="schedule-day">
+              <span class="schedule-day__dow">Friday</span>
+              <span class="schedule-day__location">Farlington Farmers Market</span>
+              <span class="schedule-day__time">8am – 1pm</span>
+            </div>
+            <div class="schedule-day">
+              <span class="schedule-day__dow">Saturday</span>
+              <span class="schedule-day__location">Downtown Pittsburg Square</span>
+              <span class="schedule-day__time">7am – 3pm</span>
+            </div>
+            <div class="schedule-day schedule-day--closed">
+              <span class="schedule-day__dow">Sunday</span>
+              <span class="schedule-day__location">Closed</span>
+              <span class="schedule-day__time">—</span>
+            </div>
+          </div>
+          <div class="tracker-links">
+            <a href="https://streetfoodfinder.com/" target="_blank" rel="noopener" class="tracker-link">📍 StreetFoodFinder</a>
+            <a href="https://gotruckster.com/" target="_blank" rel="noopener" class="tracker-link">🚚 Truckster</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="tracker-link">📸 Instagram</a>
+          </div>
+        </div>
+        <div>
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51236.16!2d-94.7058!3d37.4106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b6c85cc4d8f0c3%3A0x4f7e9a2c90e5f0a0!2sPittsburg%2C%20KS!5e0!3m2!1sen!2sus!4v1700000000000"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Iron & Embers current location map"
+            ></iframe>
+            <div class="map-overlay-badge">
+              <div class="live-dot"></div>
+              Live Location · Downtown Pittsburg
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATMOSPHERE STRIP — embers close-up between ticker and location -->
+  <div class="atmo-strip">
+    <img src="images/embers-close.png" alt="" class="atmo-strip__img" aria-hidden="true" />
+    <div class="atmo-strip__overlay"></div>
+    <p class="atmo-strip__quote">"Nothing here comes from a bag or a box."</p>
+  </div>
+
+  <!-- TRUCK SHOWCASE — wide truck photo -->
+  <section class="truck-showcase">
+    <img src="images/truck-wide.png" alt="Iron & Embers food truck" class="truck-showcase__img" />
+    <div class="truck-showcase__overlay"></div>
+    <div class="truck-showcase__content">
+      <p class="eyebrow eyebrow--ember">The Truck</p>
+      <h2>Coal Country<br/><em>On Wheels.</em></h2>
+    </div>
+  </section>
+
+  <div class="ore-divider" aria-hidden="true">
+    <div class="ore-divider__line"></div>
+    <svg class="ore-divider__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 4L28 12V20L16 28L4 20V12L16 4Z" fill="#C0392B" opacity="0.8"/>
+      <path d="M16 8L24 13.5V19L16 24.5L8 19V13.5L16 8Z" fill="#0f0f0f"/>
+      <path d="M16 11L21 14.5V18L16 21.5L11 18V14.5L16 11Z" fill="#C0392B" opacity="0.5"/>
+    </svg>
+    <div class="ore-divider__line"></div>
+  </div>
+
+
   <!-- ORDER AHEAD -->
   <section class="section order-section" id="order">
     <div class="section__inner">
@@ -581,6 +586,7 @@
     <div class="section__inner" style="position:relative; z-index:2;">
       <div class="about-grid">
         <div class="about-logo-wrap">
+          <img src="images/logo-round.png" alt="Iron & Embers — The Heat of the Mine. The Heart of the Town." class="about-logo" />
           <div class="about-craft-img-wrap">
             <img src="images/kneading-bread.png" alt="Hands kneading homemade bread dough" class="about-craft-img" />
           </div>
