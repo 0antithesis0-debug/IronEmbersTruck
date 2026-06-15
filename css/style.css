@@ -172,7 +172,7 @@ em { font-style: italic; color: var(--ember); }
 }
 .hero__content { position: relative; z-index: 2; max-width: 680px; margin: 0 auto; }
 .hero__logo-wrap {
-  width: clamp(160px, 42vw, 600px);
+  width: clamp(160px, 65vw, 600px);
   margin: 0 auto 32px;
 }
 .hero__logo {
